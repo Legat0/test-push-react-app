@@ -12,10 +12,4 @@ jobs:
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
-          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: |
-            🚀 New Pull Request Created!
-            Repository: ${{ github.repository }}
-            Title: ${{ github.event.pull_request.title }}
-            By: ${{ github.event.pull_request.user.login }}
-            URL: ${{ github.event.pull_request.html_url }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}     
